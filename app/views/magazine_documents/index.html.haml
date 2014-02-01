@@ -24,8 +24,8 @@
     - @magazine_documents.each do |magazine_document|
       %tr
         %td= link_to magazine_document.id, magazine_document_path(magazine_document)
-        %td= magazine_document.supplier_id
-        %td= magazine_document.commodity_id
+        %td= Supplier.find(magazine_document.supplier_id).description
+        %td= Commodity.find(magazine_document.commodity_id).name
         %td= magazine_document.quanity
         %td= magazine_document.date
         %td= magazine_document.current_number

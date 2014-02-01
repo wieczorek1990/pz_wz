@@ -63,3 +63,5 @@ gem 'twitter-bootstrap-rails'
 gem 'rails-settings-cached'
 
 gem 'searchkick'
+
+gem 'sidekiq'

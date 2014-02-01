@@ -9,4 +9,10 @@ class MagazineDocument < ActiveRecord::Base
   validates :humidity, numericality: { :greater_than_or_equal_to => 0}
   validates :contamination, numericality: { :greater_than_or_equal_to => 0}
   validates :document_type, inclusion: { in:  TYPES}
+  after_save :create_image
+
+  private
+  def create_image
+    ImageWorker.perform_async
+  end
 end

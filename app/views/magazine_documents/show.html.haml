@@ -54,6 +54,8 @@
   %strong= model_class.human_attribute_name(:destination) + ':'
   %br
   = @magazine_document.destination
+%p
+  = link_to t('print'), image_path(@magazine_document), class: 'btn btn-primary'
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), magazine_documents_path, :class => 'btn'

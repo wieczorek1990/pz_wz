@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/rmagick/rmagick.git
+  revision: 79e1708c7f6792a3a90cb8cb3ffaeb74c58e092e
+  specs:
+    rmagick (2.13.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -191,6 +197,7 @@ DEPENDENCIES
   pry
   rails (= 4.0.2)
   rails-settings-cached
+  rmagick!
   rolify
   sass-rails (~> 4.0.0)
   sdoc

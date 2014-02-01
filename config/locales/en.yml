@@ -20,5 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   print: "Print"
+  sign_in: "Sign in"
+  new_magazine_document: "New magazine document"
+  magazine_documents: "Magazine documents"
+  suppliers: "Suppliers"
+  commodities: "Commodities"
+  sign_out: "Sign out"

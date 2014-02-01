@@ -1,0 +1,15 @@
+pl:
+  helpers:
+    actions: "Akcje"
+    links:
+      back: "Cofnij"
+      cancel: "Anuluj"
+      confirm: "Jesteś pewien?"
+      destroy: "Usuń"
+      new: "Nowy"
+      edit: "Edycja"
+    titles:
+      edit: "Edytuj %{model}"
+      save: "Zapisz %{model}"
+      new: "Nowy %{model}"
+      delete: "Usuń %{model}"

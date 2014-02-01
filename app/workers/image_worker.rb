@@ -4,7 +4,7 @@ class ImageWorker
   def perform(magazine_document_id)
     md = MagazineDocument.find(magazine_document_id)
     MagazineDocumentWriter.new(Rails.root.join('public', 'images', md.id.to_s + '.png'),
-                               Rails.root.join('public', 'images'),
+                               Rails.root.join('public', 'templates'),
                                md.supplier.description, md.commodity.name,
                                md.quanity.to_s, md.date.to_formatted_s(:num),
                                md.current_number.to_s, md.humidity.to_s('F'),

@@ -12,5 +12,5 @@
     .controls
       = f.text_field :from, :class => 'text_field'
   .form-actions
-    = f.submit nil, :class => 'btn btn-primary'
+    = f.submit t('activerecord.attributes.supplier.create'), :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), suppliers_path, :class => 'btn'

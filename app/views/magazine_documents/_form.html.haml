@@ -15,7 +15,7 @@
   .control-group
     = f.label :date, :class => 'control-label'
     .controls
-      = f.date_select :date, :class => 'text_field'
+      = f.date_select :date, use_month_names: t('months'), :class => 'text_field'
   .control-group
     = f.label :current_number, :class => 'control-label'
     .controls
@@ -53,5 +53,5 @@
     .controls
       = f.text_field :destination, :class => 'text_field'
   .form-actions
-    = f.submit nil, :class => 'btn btn-primary'
+    = f.submit t('activerecord.attributes.magazine_document.create'), :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), magazine_documents_path, :class => 'btn'

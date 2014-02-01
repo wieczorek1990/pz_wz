@@ -1,0 +1,69 @@
+pl:
+  print: 'Drukuj'
+  sign_in: 'Zaloguj'
+  new_magazine_document: 'Nowy dokument magazynowy'
+  magazine_documents: 'Dokumenty magazynowe'
+  suppliers: 'Dostawcy'
+  commodities: 'Towary'
+  sign_out: 'Wyloguj'
+  new_supplier: 'Nowy dostawca'
+  date:
+    order:
+      - day
+      - :month
+      - :year
+    formats:
+      default: "%d.%m.%Y"
+  time:
+    formats:
+      default: "%d.%m.%Y %H:%M"
+  months:
+    - 'Styczeń'
+    - 'Luty'
+    - 'Marzec'
+    - 'Kwiecień'
+    - 'Maj'
+    - 'Czerwiec'
+    - 'Lipiec'
+    - 'Sierpień'
+    - 'Wrzesień'
+    - 'Październik'
+    - 'Listopad'
+    - 'Grudzień'
+  helpers:
+    links:
+      back: 'Cofnij'
+      edit: 'Edytuj'
+      destroy: 'Usuń'
+  activerecord:
+    models:
+      commmodity: 'Towar'
+      supplier: 'Dostawca'
+      magazine_document: 'Dokument magazynowy'
+    attributes:
+      commodity:
+        name: 'Nazwa'
+        created_at: 'Data utworzenia'
+        create: 'Utwórz towar'
+      supplier:
+        first_name: 'Imię'
+        last_name: 'Nazwisko'
+        from: 'Z'
+        created_at: 'Data utworzenia'
+        create: 'Utwórz dostawcę'
+      magazine_document:
+        supplier_id: 'Dostawca'
+        commodity_id: 'Towar'
+        quanity: 'Ilość'
+        date: 'Data'
+        current_number: 'Nr bieżący'
+        humidity: 'Wilgotność'
+        contamination: 'Zanieczyszczenie'
+        document_type: 'Typ dokumentu'
+        vehicle_number: 'Nr pojazdu'
+        symbol_of_evidence: 'Symbol dowodu'
+        prof_of_delivery: 'Dowód dostawy'
+        no: 'Nr'
+        destination: 'Przeznaczenie'
+        created_at: 'Data utworzenia'
+        create: 'Utwórz dokument magazynowy'

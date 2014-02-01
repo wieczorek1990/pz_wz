@@ -31,7 +31,7 @@ class MagazineDocumentWriter
     fields.push Field.new('wilgotność: ' + @humidity, 83, 250, 285, 20 )
     fields.push Field.new('zanieczyszczenie: ' + @contamination, 83, 270, 285, 20)
     unless @vehicle_number.empty?
-      fields.push Field.new('nr pojazdu: ' + @vehicle_number, 83, 292, 285, 20)
+      fields.push Field.new('nr pojazdu: ' + @vehicle_number, 83, 398, 285, 20)
     end
     fields.push Field.new(@symbol_of_evidence, 346, 54, 76, 48)
     fields.push Field.new(@prof_of_delivery, 428, 44, 170, 25)

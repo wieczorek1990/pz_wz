@@ -2,8 +2,13 @@ pl:
   print: 'Drukuj'
   sign_in: 'Zaloguj'
   sign_out: 'Wyloguj'
+  sign_up: 'Zarejestruj się'
   new_magazine_document: 'Nowy dokument magazynowy'
   new_supplier: 'Nowy dostawca'
+  password: 'Hasło'
+  email: 'E-mail'
+  remember_me: 'Zapamiętaj mnie'
+  forgot_your_password: 'Zapomniałeś hasła?'
   date:
     order:
       - day

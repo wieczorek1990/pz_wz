@@ -20,7 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  print: "Print"
-  sign_in: "Sign in"
-  sign_out: "Sign out"
+  print: 'Print'
+  sign_in: 'Sign in'
+  sign_out: 'Sign out'
+  sign_up: 'Sign up'
   new_magazine_document: "New magazine document"
+  password: 'Password'
+  email: 'Email'
+  remember_me: 'Remember me'
+  forgot_your_password: 'Forgot your password?'
+

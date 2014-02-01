@@ -10,6 +10,6 @@ class ImageWorker
                                md.current_number.to_s, md.humidity.to_s('F'),
                                md.contamination.to_s('f'), md.document_type,
                                md.vehicle_number, md.symbol_of_evidence,
-                               md.prof_of_delivery, md.no, md.destination).write
+                               md.prof_of_delivery, md.number, md.destination).write
   end
 end

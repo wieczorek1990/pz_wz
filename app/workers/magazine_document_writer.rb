@@ -28,8 +28,8 @@ class MagazineDocumentWriter
     fields.push Field.new(@quanity, 523, 229, 60, 20)
     fields.push Field.new(@date, 683, 80, 75, 22)
     fields.push Field.new(@current_number, 683, 44, 75, 34)
-    fields.push Field.new('wilgotność: ' + @humidity, 83, 250, 285, 20 )
-    fields.push Field.new('zanieczyszczenie: ' + @contamination, 83, 270, 285, 20)
+    fields.push Field.new('wilgotność: ' + @humidity + '%', 83, 250, 285, 20 )
+    fields.push Field.new('zanieczyszczenie: ' + @contamination + '%', 83, 270, 285, 20)
     unless @vehicle_number.empty?
       fields.push Field.new('nr pojazdu: ' + @vehicle_number, 83, 398, 285, 20)
     end

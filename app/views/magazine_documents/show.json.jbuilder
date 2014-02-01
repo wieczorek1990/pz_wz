@@ -1,1 +1,1 @@
-json.extract! @magazine_document, :id, :supplier_id, :commodity_id, :quanity, :date, :current_number, :humidity, :contamination, :type, :vehicle_number, :symbol_of_evidence, :prof_of_delivery, :no, :destination, :created_at, :updated_at
+json.extract! @magazine_document, :id, :supplier_id, :commodity_id, :quanity, :date, :current_number, :humidity, :contamination, :document_type, :vehicle_number, :symbol_of_evidence, :prof_of_delivery, :no, :destination, :created_at, :updated_at

@@ -8,5 +8,5 @@ class MagazineDocument < ActiveRecord::Base
   validates :current_number, numericality: { :greater_than => 0}
   validates :humidity, numericality: { :greater_than_or_equal_to => 0}
   validates :contamination, numericality: { :greater_than_or_equal_to => 0}
-  validates :type, inclusion: { in:  TYPES}
+  validates :document_type, inclusion: { in:  TYPES}
 end

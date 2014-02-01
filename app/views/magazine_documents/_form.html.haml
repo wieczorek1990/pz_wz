@@ -29,9 +29,9 @@
     .controls
       = f.text_field :contamination, :class => 'text_field'
   .control-group
-    = f.label :type, :class => 'control-label'
+    = f.label :document_type, :class => 'control-label'
     .controls
-      = f.select :type, MagazineDocument::TYPES, :class => 'text_field'
+      = f.select :document_type, MagazineDocument::TYPES, :class => 'text_field'
   .control-group
     = f.label :vehicle_number, :class => 'control-label'
     .controls

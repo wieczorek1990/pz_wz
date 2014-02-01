@@ -9,6 +9,8 @@ pl:
   email: 'E-mail'
   remember_me: 'Zapamiętaj mnie'
   forgot_your_password: 'Zapomniałeś hasła?'
+  reset_instructions: 'Wyślij mi instrukcję resetowania hasła'
+  password_confirmation: 'Potwierdzenie hasła'
   date:
     order:
       - day

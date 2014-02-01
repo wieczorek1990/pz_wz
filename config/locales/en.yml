@@ -29,4 +29,6 @@ en:
   email: 'Email'
   remember_me: 'Remember me'
   forgot_your_password: 'Forgot your password?'
+  reset_instructions: 'Send me reset password instructions'
+  password_confirmation: 'Password confirmation'
 

@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140201154002) do
     t.string   "vehicle_number"
     t.string   "symbol_of_evidence"
     t.string   "prof_of_delivery"
-    t.string   "no"
+    t.string   "number"
     t.string   "destination"
     t.datetime "created_at"
     t.datetime "updated_at"

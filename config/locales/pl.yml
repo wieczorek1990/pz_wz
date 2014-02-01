@@ -60,7 +60,7 @@ pl:
         vehicle_number: 'Nr pojazdu'
         symbol_of_evidence: 'Symbol dowodu'
         prof_of_delivery: 'Dowód dostawy'
-        no: 'Nr'
+        number: 'Nr'
         destination: 'Przeznaczenie'
         created_at: 'Data utworzenia'
         create: 'Utwórz dokument magazynowy'

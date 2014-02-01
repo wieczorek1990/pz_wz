@@ -16,7 +16,7 @@
       %th= model_class.human_attribute_name(:vehicle_number)
       %th= model_class.human_attribute_name(:symbol_of_evidence)
       %th= model_class.human_attribute_name(:prof_of_delivery)
-      %th= model_class.human_attribute_name(:no)
+      %th= model_class.human_attribute_name(:number)
       %th= model_class.human_attribute_name(:destination)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
@@ -35,7 +35,7 @@
         %td= magazine_document.vehicle_number
         %td= magazine_document.symbol_of_evidence
         %td= magazine_document.prof_of_delivery
-        %td= magazine_document.no
+        %td= magazine_document.number
         %td= magazine_document.destination
         %td=l magazine_document.created_at
         %td

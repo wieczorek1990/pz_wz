@@ -22,8 +22,5 @@
 en:
   print: "Print"
   sign_in: "Sign in"
-  new_magazine_document: "New magazine document"
-  magazine_documents: "Magazine documents"
-  suppliers: "Suppliers"
-  commodities: "Commodities"
   sign_out: "Sign out"
+  new_magazine_document: "New magazine document"

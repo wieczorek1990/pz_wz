@@ -1,11 +1,8 @@
 pl:
   print: 'Drukuj'
   sign_in: 'Zaloguj'
-  new_magazine_document: 'Nowy dokument magazynowy'
-  magazine_documents: 'Dokumenty magazynowe'
-  suppliers: 'Dostawcy'
-  commodities: 'Towary'
   sign_out: 'Wyloguj'
+  new_magazine_document: 'Nowy dokument magazynowy'
   new_supplier: 'Nowy dostawca'
   date:
     order:
@@ -67,3 +64,18 @@ pl:
         destination: 'Przeznaczenie'
         created_at: 'Data utworzenia'
         create: 'Utwórz dokument magazynowy'
+  commodities:
+    index:
+      title: 'Towary'
+    new:
+      title: 'Nowy towar'
+  suppliers:
+    index:
+      title: 'Dostawcy'
+    new:
+      title: 'Nowy dostawca'
+  magazine_documents:
+    index:
+      title: 'Dokumenty magazynowe'
+    new:
+      title: 'Nowy dokument magazynowy'

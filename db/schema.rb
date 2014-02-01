@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140201154002) do
     t.integer  "current_number"
     t.decimal  "humidity"
     t.decimal  "contamination"
-    t.string   "type"
+    t.string   "document_type"
     t.string   "vehicle_number"
     t.string   "symbol_of_evidence"
     t.string   "prof_of_delivery"

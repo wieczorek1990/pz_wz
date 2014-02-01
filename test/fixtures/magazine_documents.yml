@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  supplier_id: 
+  commodity_id: 
+  quanity: 1
+  date: 2014-02-01
+  current_number: 1
+  humidity: 9.99
+  contamination: 9.99
+  type: 
+  vehicle_number: MyString
+  symbol_of_evidence: MyString
+  prof_of_delivery: MyString
+  'no': MyString
+  destination: MyString
+
+two:
+  supplier_id: 
+  commodity_id: 
+  quanity: 1
+  date: 2014-02-01
+  current_number: 1
+  humidity: 9.99
+  contamination: 9.99
+  type: 
+  vehicle_number: MyString
+  symbol_of_evidence: MyString
+  prof_of_delivery: MyString
+  'no': MyString
+  destination: MyString

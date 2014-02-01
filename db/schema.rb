@@ -11,10 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140201131545) do
+ActiveRecord::Schema.define(version: 20140201154002) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "commodities", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "magazine_documents", force: true do |t|
+    t.integer  "supplier_id"
+    t.integer  "commodity_id"
+    t.integer  "quanity"
+    t.date     "date"
+    t.integer  "current_number"
+    t.decimal  "humidity"
+    t.decimal  "contamination"
+    t.string   "type"
+    t.string   "vehicle_number"
+    t.string   "symbol_of_evidence"
+    t.string   "prof_of_delivery"
+    t.string   "no"
+    t.string   "destination"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "magazine_documents", ["commodity_id"], name: "index_magazine_documents_on_commodity_id", using: :btree
+  add_index "magazine_documents", ["supplier_id"], name: "index_magazine_documents_on_supplier_id", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -26,6 +53,14 @@ ActiveRecord::Schema.define(version: 20140201131545) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
+
+  create_table "suppliers", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "from"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

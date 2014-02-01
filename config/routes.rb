@@ -1,4 +1,10 @@
 PzWz::Application.routes.draw do
+  resources :magazine_documents
+
+  resources :suppliers
+
+  resources :commodities
+
   devise_for :users
   get "home/index"
   root 'home#index'

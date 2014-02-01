@@ -1,0 +1,61 @@
+- model_class = MagazineDocument
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.titleize
+
+%p
+  %strong= model_class.human_attribute_name(:supplier_id) + ':'
+  %br
+  = @magazine_document.supplier_id
+%p
+  %strong= model_class.human_attribute_name(:commodity_id) + ':'
+  %br
+  = @magazine_document.commodity_id
+%p
+  %strong= model_class.human_attribute_name(:quanity) + ':'
+  %br
+  = @magazine_document.quanity
+%p
+  %strong= model_class.human_attribute_name(:date) + ':'
+  %br
+  = @magazine_document.date
+%p
+  %strong= model_class.human_attribute_name(:current_number) + ':'
+  %br
+  = @magazine_document.current_number
+%p
+  %strong= model_class.human_attribute_name(:humidity) + ':'
+  %br
+  = @magazine_document.humidity
+%p
+  %strong= model_class.human_attribute_name(:contamination) + ':'
+  %br
+  = @magazine_document.contamination
+%p
+  %strong= model_class.human_attribute_name(:type) + ':'
+  %br
+  = @magazine_document.type
+%p
+  %strong= model_class.human_attribute_name(:vehicle_number) + ':'
+  %br
+  = @magazine_document.vehicle_number
+%p
+  %strong= model_class.human_attribute_name(:symbol_of_evidence) + ':'
+  %br
+  = @magazine_document.symbol_of_evidence
+%p
+  %strong= model_class.human_attribute_name(:prof_of_delivery) + ':'
+  %br
+  = @magazine_document.prof_of_delivery
+%p
+  %strong= model_class.human_attribute_name(:no) + ':'
+  %br
+  = @magazine_document.no
+%p
+  %strong= model_class.human_attribute_name(:destination) + ':'
+  %br
+  = @magazine_document.destination
+
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), magazine_documents_path, :class => 'btn'
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_magazine_document_path(@magazine_document), :class => 'btn'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), magazine_document_path(@magazine_document), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'

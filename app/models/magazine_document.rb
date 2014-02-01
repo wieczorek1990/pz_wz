@@ -1,4 +1,5 @@
 class MagazineDocument < ActiveRecord::Base
+  resourcify
   TYPES = ['PZ', 'WZ']
   belongs_to :supplier
   belongs_to :commodity

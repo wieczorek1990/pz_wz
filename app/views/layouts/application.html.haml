@@ -29,21 +29,26 @@
           %a.brand(href="#") PzWz
           .container.nav-collapse
             %ul.nav
-              %li= link_to t('magazine_documents'), magazine_documents_path
-              %li= link_to t('suppliers'), suppliers_path
-              %li= link_to t('commodities'), commodities_path
+              - unless user_signed_in?
+                %li= link_to t('sign_in'), new_user_session_path
+              - else
+                %li= link_to t('new_magazine_document'), new_magazine_document_path
+                %li= link_to t('magazine_documents'), magazine_documents_path
+                %li= link_to t('suppliers'), suppliers_path
+                %li= link_to t('commodities'), commodities_path
+                %li= link_to t('sign_out'), destroy_user_session_path, method: :delete
 
     .container-fluid
 
       .row-fluid
-        .span3
-          .well.sidebar-nav
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
+        -#.span3
+          -#.well.sidebar-nav
+          -#  %ul.nav.nav-list
+          -#    %li.nav-header Sidebar
 
         .span9
           = bootstrap_flash
           = yield
-    
+
       %footer
-        %p &copy; Company 2014
+        %p &copy; ŁW 2014

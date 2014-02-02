@@ -1,5 +1,6 @@
 class MagazineDocument < ActiveRecord::Base
   resourcify
+  self.per_page = 10
   TYPES = ['PZ', 'WZ']
   belongs_to :supplier
   belongs_to :commodity
@@ -16,6 +17,13 @@ class MagazineDocument < ActiveRecord::Base
 
   private
   def create_pdf
-    PdfWorker.perform_async(self.id)
+    PdfWriter.new(Rails.root.join('public', 'pdf', self.id.to_s + '.pdf'),
+                  Rails.root.join('public', 'templates'),
+                  self.supplier.description, self.commodity.name,
+                  self.quanity_gross.to_s, self.quanity_tare.to_s,
+                  self.quanity_net.to_s, self.date.to_formatted_s(:num),
+                  self.current_number.to_s, self.humidity.to_s('F'),
+                  self.contamination.to_s('f'), self.document_type,
+                  self.vehicle_number).write
   end
 end

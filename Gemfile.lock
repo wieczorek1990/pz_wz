@@ -37,8 +37,6 @@ GEM
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
     cancan (1.6.10)
-    celluloid (0.15.2)
-      timers (~> 1.1.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -47,7 +45,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    connection_pool (1.2.0)
     devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -114,9 +111,6 @@ GEM
     rake (10.1.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    redis (3.0.7)
-    redis-namespace (1.4.1)
-      redis (~> 3.0.4)
     responders (1.0.0)
       railties (>= 3.2, < 5)
     rest-client (1.6.7)
@@ -133,12 +127,6 @@ GEM
     searchkick (0.5.0)
       tire
       tire-contrib
-    sidekiq (2.17.3)
-      celluloid (>= 0.15.2)
-      connection_pool (>= 1.0.0)
-      json
-      redis (>= 3.0.6)
-      redis-namespace (>= 1.3.1)
     slop (3.4.7)
     sprockets (2.10.1)
       hike (~> 1.2)
@@ -153,7 +141,6 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
-    timers (1.1.0)
     tire (0.6.2)
       activemodel (>= 3.0)
       activesupport
@@ -202,7 +189,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   searchkick
-  sidekiq
   turbolinks
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)

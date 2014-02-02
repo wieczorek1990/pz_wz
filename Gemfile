@@ -64,6 +64,4 @@ gem 'rails-settings-cached'
 
 gem 'searchkick'
 
-gem 'sidekiq'
-
 gem 'rmagick', github: 'rmagick/rmagick'

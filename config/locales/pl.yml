@@ -11,6 +11,10 @@ pl:
   forgot_your_password: 'Zapomniałeś hasła?'
   reset_instructions: 'Wyślij mi instrukcję resetowania hasła'
   password_confirmation: 'Potwierdzenie hasła'
+  will_paginate:
+    previous_label: "&#8592; Poprzednia"
+    next_label: "Następna &#8594;"
+    page_gap: "&hellip;"
   date:
     order:
       - day

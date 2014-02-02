@@ -1,0 +1,39 @@
+\documentclass{letter}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\addtolength{\hoffset}{-2cm}
+\addtolength{\textheight}{4cm}
+\addtolength{\textwidth}{4cm}
+\addtolength{\voffset}{-2cm}
+\begin{document}
+\hrule
+"Agro-Handel Skibińksa, Wieczorek\\
+Spółka Jawna"\\
+\hrule
+{\large\textbf{DOWÓD PRZYJĘCIA PZ NR \current_number\\}}
+Data wystawienia dowodu: \date\\
+\hrule
+Dostawca: \supplier\\
+Nr rejestracyjny pojazdu: \vehicle_number\\
+\hrule
+\begin{center}
+Analiza jakościowa:\\
+\begin{tabular}{ll}
+Wilgotność & \humidity\%\\
+Zanieczyszczenia ogółem & \contamination\%\\
+\end{tabular}
+\end{center}
+\hrule
+\begin{tabular}{C{0.2\textwidth}C{0.2\textwidth}C{0.2\textwidth}C{0.2\textwidth}}
+Nazwa towaru: & Waga brutto: & Waga tara: & Waga netto:\\
+\commodity & \quanity_gross & \quanity_tare & \quanity_net\\
+\end{tabular}
+\hrule
+\begin{tabular}{L{0.3\textwidth}C{0.3\textwidth}R{0.3\textwidth}}
+Wystawca & Magazynier & Dostawca\\
+\end{tabular}
+\end{document}

@@ -9,9 +9,17 @@
     .controls
       = f.collection_select :commodity_id, Commodity.all, :id, :name, :class => 'text_field'
   .control-group
-    = f.label :quanity, :class => 'control-label'
+    = f.label :quanity_gross, :class => 'control-label'
     .controls
-      = f.text_field :quanity, :class => 'text_field'
+      = f.text_field :quanity_gross, :class => 'text_field'
+  .control-group
+    = f.label :quanity_tare, :class => 'control-label'
+    .controls
+      = f.text_field :quanity_tare, :class => 'text_field'
+  .control-group
+    = f.label :quanity_net, :class => 'control-label'
+    .controls
+      = f.text_field :quanity_net, :class => 'text_field'
   .control-group
     = f.label :date, :class => 'control-label'
     .controls
@@ -36,22 +44,6 @@
     = f.label :vehicle_number, :class => 'control-label'
     .controls
       = f.text_field :vehicle_number, :class => 'text_field'
-  .control-group
-    = f.label :symbol_of_evidence, :class => 'control-label'
-    .controls
-      = f.text_field :symbol_of_evidence, :class => 'text_field'
-  .control-group
-    = f.label :prof_of_delivery, :class => 'control-label'
-    .controls
-      = f.text_field :prof_of_delivery, :class => 'text_field'
-  .control-group
-    = f.label :number, :class => 'control-label'
-    .controls
-      = f.text_field :number, :class => 'text_field'
-  .control-group
-    = f.label :destination, :class => 'control-label'
-    .controls
-      = f.text_field :destination, :class => 'text_field'
   .form-actions
     = f.submit t('activerecord.attributes.magazine_document.create'), :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), magazine_documents_path, :class => 'btn'

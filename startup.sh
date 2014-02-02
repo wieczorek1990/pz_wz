@@ -1,3 +1,3 @@
 #!/bin/bash
 redis-server &
-bundle exec sidekiq
+bundle exec sidekiq &

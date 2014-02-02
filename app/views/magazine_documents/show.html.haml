@@ -11,9 +11,17 @@
   %br
   = Commodity.find(@magazine_document.commodity_id).name
 %p
-  %strong= model_class.human_attribute_name(:quanity) + ':'
+  %strong= model_class.human_attribute_name(:quanity_gross) + ':'
   %br
-  = @magazine_document.quanity
+  = @magazine_document.quanity_gross
+%p
+  %strong= model_class.human_attribute_name(:quanity_tare) + ':'
+  %br
+  = @magazine_document.quanity_tare
+%p
+  %strong= model_class.human_attribute_name(:quanity_net) + ':'
+  %br
+  = @magazine_document.quanity_net
 %p
   %strong= model_class.human_attribute_name(:date) + ':'
   %br
@@ -39,23 +47,7 @@
   %br
   = @magazine_document.vehicle_number
 %p
-  %strong= model_class.human_attribute_name(:symbol_of_evidence) + ':'
-  %br
-  = @magazine_document.symbol_of_evidence
-%p
-  %strong= model_class.human_attribute_name(:prof_of_delivery) + ':'
-  %br
-  = @magazine_document.prof_of_delivery
-%p
-  %strong= model_class.human_attribute_name(:number) + ':'
-  %br
-  = @magazine_document.number
-%p
-  %strong= model_class.human_attribute_name(:destination) + ':'
-  %br
-  = @magazine_document.destination
-%p
-  = link_to t('print'), image_path(@magazine_document), class: 'btn btn-primary'
+  = link_to t('print'), pdf_path(@magazine_document), class: 'btn btn-primary'
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), magazine_documents_path, :class => 'btn'

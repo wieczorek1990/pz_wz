@@ -7,17 +7,15 @@
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:supplier_id)
       %th= model_class.human_attribute_name(:commodity_id)
-      %th= model_class.human_attribute_name(:quanity)
+      %th= model_class.human_attribute_name(:quanity_gross)
+      %th= model_class.human_attribute_name(:quanity_tare)
+      %th= model_class.human_attribute_name(:quanity_net)
       %th= model_class.human_attribute_name(:date)
       %th= model_class.human_attribute_name(:current_number)
       %th= model_class.human_attribute_name(:humidity)
       %th= model_class.human_attribute_name(:contamination)
       %th= model_class.human_attribute_name(:document_type)
       %th= model_class.human_attribute_name(:vehicle_number)
-      %th= model_class.human_attribute_name(:symbol_of_evidence)
-      %th= model_class.human_attribute_name(:prof_of_delivery)
-      %th= model_class.human_attribute_name(:number)
-      %th= model_class.human_attribute_name(:destination)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -26,17 +24,15 @@
         %td= link_to magazine_document.id, magazine_document_path(magazine_document)
         %td= Supplier.find(magazine_document.supplier_id).description
         %td= Commodity.find(magazine_document.commodity_id).name
-        %td= magazine_document.quanity
+        %td= magazine_document.quanity_gross
+        %td= magazine_document.quanity_tare
+        %td= magazine_document.quanity_net
         %td= magazine_document.date
         %td= magazine_document.current_number
         %td= magazine_document.humidity
         %td= magazine_document.contamination
         %td= magazine_document.document_type
         %td= magazine_document.vehicle_number
-        %td= magazine_document.symbol_of_evidence
-        %td= magazine_document.prof_of_delivery
-        %td= magazine_document.number
-        %td= magazine_document.destination
         %td=l magazine_document.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_magazine_document_path(magazine_document), :class => 'btn btn-mini'

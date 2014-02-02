@@ -6,7 +6,7 @@ module MagazineDocumentsHelper
     end
     return current_number + 1
   end
-  def image_path(magazine_document)
-    '/images/' + magazine_document.id.to_s + '.png'
+  def pdf_path(magazine_document)
+    '/pdf/' + magazine_document.id.to_s + '.pdf'
   end
 end

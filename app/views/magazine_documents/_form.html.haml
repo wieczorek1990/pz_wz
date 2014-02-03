@@ -2,7 +2,7 @@
   .control-group
     = f.label :supplier_id, :class => 'control-label'
     .controls
-      = f.collection_select :supplier_id, Supplier.all, :id, :description, :class => 'text_field'
+      = f.select :supplier_id, Supplier.all.map { |s| [s.description, s.id] }, { include_blank: true }, { class: 'chosen-select'}
       = link_to t('new_supplier'), new_supplier_path, class: 'btn'
   .control-group
     = f.label :commodity_id, :class => 'control-label'

@@ -1,0 +1,30 @@
+\documentclass{letter}
+\begin{document}
+\hrule
+"Agro-Handel Skibińksa, Wieczorek\\
+Spółka Jawna"
+\hrule
+Dowód wydania WZ NR \current_number
+Data wystawienia dowodu: \date
+\hrule
+Klient \supplier
+Nr rejestracyjny pojazdu: \vehicle_number
+\hrule
+{\centering
+Analiza jakościowa:
+\begin{tabular}{ll}
+Wilgotność & \humidity\%\\
+Zanieczyszczenia ogółem & \contamination\%\\
+\end{tabular}
+\hrule
+\begin{tabular}{lccc}
+Nazwa towaru: & Waga brutto: & Waga tara: & Waga netto:\\
+\commodity & \quanity_gross & \quanity_tare & \quanity_net\\
+\end{tabular}
+\hrule
+\begin{tabular}{lll}
+Wystawca & Magazynier & Klient
+\end{tabular}
+\\
+\hrule
+\end{document}
